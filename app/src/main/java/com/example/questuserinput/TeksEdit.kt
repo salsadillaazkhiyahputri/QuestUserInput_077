@@ -1,5 +1,7 @@
 package com.example.questuserinput
 
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.mutableStateOf
@@ -19,6 +21,13 @@ fun FormDataDiri(modifier: Modifier
     var nama by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var jenis by remember { mutableStateOf("") }
+
+    val gender:List<String> = listOf("Laki-laki", "Perempuan")
+
+    Column { modifier.padding(top = 50.dp),
+    }
+
+
 
 }
 
